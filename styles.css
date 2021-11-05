@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+header h1 {
+    margin: 1.5rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: -2.7px;
+    text-transform: uppercase;
+}
+
+main {
+    margin: min(50%, 8.5625rem) auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    width: min(90%, 75rem);
+    gap: min(10%, 7.375rem);
+}
+
+.section-right >* {
+    margin-bottom: 1.25rem;
+}
+
+.section-right > h1 {
+    font-size: 4rem;
+    line-height: 94.78px;
+    letter-spacing: -3.5px;
+}
+
+p {
+    color: #4F4F4F;
+    max-width: 25rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    padding: 1.5rem;
+    background: #333333;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    border: 1px solid #333333;
+}
+
+button:hover,
+button:focus {
+    background: #FFFFFF;
+    color: #333333;
+}
+
+@media (max-width: 625px) {
+    section {
+        grid-auto-flow: row;
+    }
+}
+
+@media  (max-width: 376px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+    
+    .section-right > h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1.125rem;
+    }
+}
